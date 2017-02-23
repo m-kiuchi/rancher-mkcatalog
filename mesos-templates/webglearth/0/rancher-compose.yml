@@ -1,0 +1,16 @@
+.catalog:
+  name: WebGLEarth
+  version: "v0.0.1-rancher1"
+  description: "WebGL Demo app running on Rancher and Mesos-Marathon"
+  minimum_rancher_version: v1.0.0
+webglearth:
+  scale: 1
+  start_on_create: true
+  health_check:
+    healty_threshold: 2
+    response_timeout: 2000
+    port: 80
+    unhealty_threshold: 2
+    interval: 3000
+    strategy: recreate
+    request_line: '/'

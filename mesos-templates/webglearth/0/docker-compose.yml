@@ -1,0 +1,8 @@
+webglearth:
+  privileged: true
+  image: mkiuchi/webglearth:latest
+  environment:
+    ZK_SERVICE: mesos/zookeeper
+    MESOS_SERVICE: mesos/mesos-master
+  ports:
+  - 80
