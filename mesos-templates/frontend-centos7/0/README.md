@@ -33,8 +33,16 @@
 
 ![07.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/frontend-centos7/0/07.jpg)
 
+## sshでログイン
+
 sshは以下のように実行します
 
 ```
 $ ssh -l <ユーザ名> -p <ポート番号> <接続先IPアドレス>
+```
+
+root以外のユーザでログインした場合、管理者権限コマンドを実行するときは `sudo` を使用します
+
+```
+$ sudo <コマンド>
 ```
