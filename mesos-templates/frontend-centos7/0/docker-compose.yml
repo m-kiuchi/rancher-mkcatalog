@@ -4,5 +4,6 @@ frontend-centos7:
   environment:
     ZK_SERVICE: mesos/zookeeper
     MESOS_SERVICE: mesos/mesos-master
+    SSHUSER: ${SSHUSER}
   ports:
   - 22
