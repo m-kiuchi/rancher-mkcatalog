@@ -6,11 +6,3 @@
 webglearth:
   scale: 1
   start_on_create: true
-  health_check:
-    healty_threshold: 2
-    response_timeout: 2000
-    port: 80
-    unhealty_threshold: 2
-    interval: 3000
-    strategy: recreate
-    request_line: '/'
