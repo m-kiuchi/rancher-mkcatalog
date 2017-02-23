@@ -13,25 +13,25 @@
 
 上部メニューから [INFRASTRUCTURE]-[Containers] を選択します
 
-![01.jpg](01.jpg)
+![01.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/frontend-centos7/0/01.jpg)
 
 コンテナ一覧から <スタック名>-<イメージ名>-<番号> の適切なコンテナを検索します。ここでは `mk2-frontend-centos7-1` を選択します。
 
-![02.jpg](02.jpg)
+![02.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/frontend-centos7/0/02.jpg)
 
 コンテナの稼働状況が表示されます。右上のメニューから [View Logs] を選択すると、コンテナ起動時に設定されたユーザ名とパスワードが表示されます。
 
-![03.jpg](03.jpg)
+![03.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/frontend-centos7/0/03.jpg)
 
-![04.jpg](04.jpg)
+![04.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/frontend-centos7/0/04.jpg)
 
-![05.jpg](05.jpg)
+![05.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/frontend-centos7/0/05.jpg)
 
 コンテナの稼働状況画面の左上のスタック名をクリックすると、ssh接続先のIPアドレスをポート番号を確認することができます
 
-![06.jpg](06.jpg)
+![06.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/frontend-centos7/0/06.jpg)
 
-![07.jpg](07.jpg)
+![07.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/frontend-centos7/0/07.jpg)
 
 sshは以下のように実行します
 
