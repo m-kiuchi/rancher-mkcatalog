@@ -8,6 +8,8 @@
 
 - Template Version: 使用したいバージョンのテンプレートを選択します
 - New Stack:Name: スタック名に使用されます
+- 設定項目
+  - SSH user name: sshログインするためのユーザ名(デフォルト: root)
 
 `Launch` ボタンを押します。
 
