@@ -1,8 +1,8 @@
-name: WebGLEarth Demo
+name: CentOS7 for interactive frontend
 description: |
-  WebGL Demo app running on Rancher and Mesos-Marathon
+  CentOS7 for interactive frontend
 version: v0.0.1-rancher1
-category: Toy Apps
+category: Frontend
 maintainer: Mitsutoshi Kiuchi <m-kiuchi@creationline.com>
 license: Apache2
 projectURL: https://github.com/m-kiuchi/rancher-mkcatalog
