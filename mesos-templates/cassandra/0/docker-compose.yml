@@ -12,8 +12,9 @@ services:
             CAS_TYPE: seed
             NODE_COUNT: ${NODE_COUNT}
         labels:
-            io.rancher.container.hostname_override: container_name
             io.rancher.sidekicks: node
+        volumes_from: 
+            - node
         #volumes:
         #    - /var/lib/rancher:/var/lib/rancher
         ports:
@@ -37,8 +38,6 @@ services:
             DATACENTER: DC1
             CAS_TYPE: node
             NODE_COUNT: ${NODE_COUNT}
-        labels:
-            io.rancher.container.hostname_override: container_name
         #volumes:
         #    - /var/lib/rancher:/var/lib/rancher
         ports:
