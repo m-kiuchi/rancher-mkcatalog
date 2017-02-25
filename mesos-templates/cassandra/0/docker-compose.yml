@@ -18,11 +18,11 @@ services:
         #volumes:
         #    - /var/lib/rancher:/var/lib/rancher
         ports:
-            - "22"
-            - "7000:7000"
-            - "7001:7001"
-            - "9042:9042"
-            - "9160:9160"
+            - 22/tcp
+            - 7000:7000/tcp
+            - 7001:7001/tcp
+            - 9042:9042/tcp
+            - 9160:9160/tcp
     #
     # Datacenter 1 non-seed node
     #
@@ -41,8 +41,8 @@ services:
         #volumes:
         #    - /var/lib/rancher:/var/lib/rancher
         ports:
-            - "22"
-            - "7000:7000"
-            - "7001:7001"
-            - "9042:9042"
-            - "9160:9160"
+            - 22/tcp
+            - 7000:7000/tcp
+            - 7001:7001/tcp
+            - 9042:9042/tcp
+            - 9160:9160/tcp
