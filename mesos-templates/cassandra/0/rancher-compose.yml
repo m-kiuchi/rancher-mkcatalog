@@ -20,5 +20,5 @@ seed:
   scale: 1
   start_on_create: true
 node:
-  scale: 2
+  scale: 1
   start_on_create: true

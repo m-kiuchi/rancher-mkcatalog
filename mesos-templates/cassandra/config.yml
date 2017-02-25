@@ -1,4 +1,4 @@
-name: "K8s Example Cassandra"
+name: "Mesos Example Cassandra"
 description: "Distributed Database"
-version: 1.0.0
+version: "v0.0.1-rancher1"
 category: Databases
