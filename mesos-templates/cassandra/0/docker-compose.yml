@@ -1,47 +1,49 @@
-#
-# Datacenter 1 seed node
-#
-seed:
-    image: mkiuchicl/cassandra-seed
-    environment:
-        ZK_SERVICE: mesos/zookeeper
-        MESOS_SERVICE: mesos/mesos-master
-        DATACENTER: DC1
-        CAS_TYPE: seed
-        NODE_COUNT: ${NODE_COUNT}
-    labels:
-        io.rancher.container.hostname_override: container_name
-        io.rancher.sidekicks: node
-    volumes:
-        - /var/lib/rancher:/var/lib/rancher
-    ports:
-        - "22"
-        - "7000:7000"
-        - "7001:7001"
-        - "9042:9042"
-        - "9160:9160"
-#
-# Datacenter 1 non-seed node
-#
-#node: 
-#    image: jdgoldie/cassandra_compose
-#    environment:
-#        DATACENTER: DC1
-node:
-    image: mkiuchicl/cassandra-seed
-    environment:
-        ZK_SERVICE: mesos/zookeeper
-        MESOS_SERVICE: mesos/mesos-master
-        DATACENTER: DC1
-        CAS_TYPE: node
-        NODE_COUNT: ${NODE_COUNT}
-    labels:
-        io.rancher.container.hostname_override: container_name
-    volumes:
-        - /var/lib/rancher:/var/lib/rancher
-    ports:
-        - "22"
-        - "7000:7000"
-        - "7001:7001"
-        - "9042:9042"
-        - "9160:9160"
+version: '2'
+services:
+    #
+    # Datacenter 1 seed node
+    #
+    seed:
+        image: mkiuchicl/cassandra-seed
+        environment:
+            ZK_SERVICE: mesos/zookeeper
+            MESOS_SERVICE: mesos/mesos-master
+            DATACENTER: DC1
+            CAS_TYPE: seed
+            NODE_COUNT: ${NODE_COUNT}
+        labels:
+            io.rancher.container.hostname_override: container_name
+            io.rancher.sidekicks: node
+        #volumes:
+        #    - /var/lib/rancher:/var/lib/rancher
+        ports:
+            - "22"
+            - "7000:7000"
+            - "7001:7001"
+            - "9042:9042"
+            - "9160:9160"
+    #
+    # Datacenter 1 non-seed node
+    #
+    #node: 
+    #    image: jdgoldie/cassandra_compose
+    #    environment:
+    #        DATACENTER: DC1
+    node:
+        image: mkiuchicl/cassandra-seed
+        environment:
+            ZK_SERVICE: mesos/zookeeper
+            MESOS_SERVICE: mesos/mesos-master
+            DATACENTER: DC1
+            CAS_TYPE: node
+            NODE_COUNT: ${NODE_COUNT}
+        labels:
+            io.rancher.container.hostname_override: container_name
+        #volumes:
+        #    - /var/lib/rancher:/var/lib/rancher
+        ports:
+            - "22"
+            - "7000:7000"
+            - "7001:7001"
+            - "9042:9042"
+            - "9160:9160"
