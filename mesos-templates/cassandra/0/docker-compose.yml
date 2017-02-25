@@ -11,6 +11,7 @@ seed:
         NODE_COUNT: ${NODE_COUNT}
     labels:
         io.rancher.container.hostname_override: container_name
+        io.rancher.sidekicks: node
     volumes:
         - /var/lib/rancher:/var/lib/rancher
     ports:
@@ -36,7 +37,6 @@ node:
         NODE_COUNT: ${NODE_COUNT}
     labels:
         io.rancher.container.hostname_override: container_name
-        io.rancher.sidekicks: seed
     volumes:
         - /var/lib/rancher:/var/lib/rancher
     ports:
