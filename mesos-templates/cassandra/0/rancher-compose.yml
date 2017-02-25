@@ -8,7 +8,7 @@
       label: "NODE_COUNT"
       description: "Number of Cassandra nodes(incl. master)"
       type: "int"
-      default: "3"
+      default: "2"
       required: true
     - variable: "SSHUSER"
       label: "SSH user name"
@@ -20,5 +20,5 @@ seed:
   scale: 1
   start_on_create: true
 node:
-  scale: 1
+  scale: ${NODE_COUNT}
   start_on_create: true
