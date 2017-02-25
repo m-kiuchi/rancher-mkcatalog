@@ -40,9 +40,11 @@ services:
             NODE_COUNT: ${NODE_COUNT}
         #volumes:
         #    - /var/lib/rancher:/var/lib/rancher
+        links:
+            - seed
         ports:
             - 22/tcp
-            - 7000:7000/tcp
-            - 7001:7001/tcp
-            - 9042:9042/tcp
-            - 9160:9160/tcp
+            - 7000/tcp
+            - 7001/tcp
+            - 9042/tcp
+            - 9160/tcp
