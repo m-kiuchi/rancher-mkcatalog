@@ -6,8 +6,8 @@ services:
     seed:
         image: mkiuchicl/cassandra
         environment:
-            ZK_SERVICE: mesos/zookeeper
-            MESOS_SERVICE: mesos/mesos-master
+            ZK_SERVICE: Mesos/zookeeper
+            MESOS_SERVICE: Mesos/mesos-master
             DATACENTER: DC1
             CAS_TYPE: seed
             NODE_COUNT: ${NODE_COUNT}
@@ -27,8 +27,8 @@ services:
     node:
         image: mkiuchicl/cassandra
         environment:
-            ZK_SERVICE: mesos/zookeeper
-            MESOS_SERVICE: mesos/mesos-master
+            ZK_SERVICE: Mesos/zookeeper
+            MESOS_SERVICE: Mesos/mesos-master
             DATACENTER: DC1
             CAS_TYPE: node
             NODE_COUNT: ${NODE_COUNT}
