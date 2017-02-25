@@ -7,6 +7,7 @@ seed:
         ZK_SERVICE: mesos/zookeeper
         MESOS_SERVICE: mesos/mesos-master
         DATACENTER: DC1
+        CAS_TYPE: seed
         NODE_COUNT: ${NODE_COUNT}
     labels:
         io.rancher.container.hostname_override: container_name
@@ -29,6 +30,7 @@ node:
         ZK_SERVICE: mesos/zookeeper
         MESOS_SERVICE: mesos/mesos-master
         DATACENTER: DC1
+        CAS_TYPE: node
         NODE_COUNT: ${NODE_COUNT}
     labels:
         io.rancher.container.hostname_override: container_name
