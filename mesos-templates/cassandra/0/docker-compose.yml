@@ -1,0 +1,21 @@
+#
+# Datacenter 1 seed node
+#
+seed:
+    image: jdgoldie/cassandra_compose
+    environment:
+        ZK_SERVICE: mesos/zookeeper
+        MESOS_SERVICE: mesos/mesos-master
+        DATACENTER: DC1
+    labels:
+        io.rancher.container.hostname_override: container_name
+    ports:
+        - "9042:9042"
+        - "9160:9160"
+#
+# Datacenter 1 non-seed node
+#
+node: 
+    image: jdgoldie/cassandra_compose
+    environment:
+        DATACENTER: DC1

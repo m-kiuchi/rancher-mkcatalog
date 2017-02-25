@@ -1,0 +1,24 @@
+.catalog:
+  name: Cassndra
+  version: "v0.0.1-rancher1"
+  description: "Cassandra"
+  minimum_rancher_version: v1.0.0
+  questions:
+    - variable: "NODECOUNT"
+      label: "NODECOUNT"
+      description: "Number of Cassandra nodes(excl. master)"
+      type: "int"
+      default: "2"
+      required: true
+    - variable: "SSHUSER"
+      label: "SSH user name"
+      description: "supply ssh user name (default is cassandra)"
+      type: "string"
+      default: "cassandra"
+      required: true
+seed:
+  scale: 1
+  start_on_create: true
+node:
+  scale: ${NODECOUNT}
+  start_on_create: true
