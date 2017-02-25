@@ -4,11 +4,11 @@
   description: "Cassandra"
   minimum_rancher_version: v1.0.0
   questions:
-    - variable: "NODECOUNT"
-      label: "NODECOUNT"
-      description: "Number of Cassandra nodes(excl. master)"
+    - variable: "NODE_COUNT"
+      label: "NODE_COUNT"
+      description: "Number of Cassandra nodes(incl. master)"
       type: "int"
-      default: "2"
+      default: "3"
       required: true
     - variable: "SSHUSER"
       label: "SSH user name"
@@ -20,5 +20,5 @@ seed:
   scale: 1
   start_on_create: true
 node:
-  scale: ${NODECOUNT}
+  scale: 2
   start_on_create: true
