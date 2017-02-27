@@ -1,7 +1,7 @@
-name: CentOS7 for interactive frontend
+name: Spark Driver - CentOS7
 description: |
-  CentOS7 for interactive frontend
-version: v7.3.0-rancher1
+  Spark Driver
+version: v2.1.0-rancher1
 category: Frontend
 maintainer: Mitsutoshi Kiuchi <m-kiuchi@creationline.com>
 license: Apache2
