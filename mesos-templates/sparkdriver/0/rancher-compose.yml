@@ -1,15 +1,15 @@
 .catalog:
-  name: Frontend-CentOS7
-  version: "v0.0.1-rancher1"
-  description: "CentOS7 for interactive frontend"
+  name: sparkdriver
+  version: "v2.1.0-rancher1"
+  description: "Spark Driver"
   minimum_rancher_version: v1.0.0
   questions:
     - variable: "SSHUSER"
       label: "SSH user name"
-      description: "supply ssh user name (default is root)"
+      description: "supply ssh user name (default is spark)"
       type: "string"
-      default: "root"
+      default: "spark"
       required: false
-frontend-centos7:
+sparkdriver:
   scale: 1
   start_on_create: true

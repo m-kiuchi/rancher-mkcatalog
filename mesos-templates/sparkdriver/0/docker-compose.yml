@@ -1,6 +1,6 @@
 sparkdriver-centos7:
   privileged: true
-  image: mkiuchicl/frontend-centos7
+  image: mkiuchicl/sparkdriver
   environment:
     ZK_SERVICE: mesos/zookeeper
     MESOS_SERVICE: mesos/mesos-master
