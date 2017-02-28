@@ -1,7 +1,7 @@
 .catalog:
-  name: sparkdriver
-  version: "v2.1.0-rancher1"
-  description: "Spark Driver"
+  name: spark
+  version: "v2.0.2-rancher1"
+  description: "Apache Spark"
   minimum_rancher_version: v1.0.0
   questions:
     - variable: "SSHUSER"

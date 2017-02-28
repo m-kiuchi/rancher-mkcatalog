@@ -1,8 +1,8 @@
-name: Spark Driver - CentOS7
+name: Apache Spark
 description: |
-  Spark Driver
-version: v2.1.0-rancher1
-category: Frontend
+  Apache Spark
+version: v2.0.2-rancher1
+category: Distributed Computing
 maintainer: Mitsutoshi Kiuchi <m-kiuchi@creationline.com>
 license: Apache2
 projectURL: https://github.com/m-kiuchi/rancher-mkcatalog

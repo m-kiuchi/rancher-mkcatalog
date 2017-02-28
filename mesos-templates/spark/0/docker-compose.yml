@@ -1,4 +1,4 @@
-sparkdriver-centos7:
+sparkdriver:
   privileged: true
   image: mkiuchicl/sparkdriver
   environment:
@@ -6,4 +6,6 @@ sparkdriver-centos7:
     MESOS_SERVICE: mesos/mesos-master
     SSHUSER: ${SSHUSER}
   ports:
+  - 4040
+  - 80
   - 22
