@@ -1,4 +1,4 @@
-name: "Mesos Example Cassandra"
+name: "Apache Cassandra"
 description: "Distributed Database"
 version: "v3.9.0-rancher1"
 category: Databases
