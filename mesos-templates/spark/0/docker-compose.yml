@@ -6,6 +6,6 @@ sparkdriver:
     MESOS_SERVICE: mesos/mesos-master
     SSHUSER: ${SSHUSER}
   ports:
-  - 4040
-  - 80
+  - 4040:4040/tcp
+  - 80:80/tcp
   - 22
