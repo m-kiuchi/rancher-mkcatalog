@@ -107,3 +107,18 @@ sshログイン後に、コマンドプロンプトから以下のようにタ�
 ```shell
 $ spark-submit --class org.apache.spark.examples.SparkPi /opt/spark/examples/jars/spark-examples_2.11-2.0.2.jar 10
 ```
+
+以下のように実行されます
+
+```shell
+17/03/05 08:24:12 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+I0305 08:24:13.786136   201 sched.cpp:222] Version: 0.28.1
+I0305 08:24:13.789535   198 sched.cpp:326] New master detected at master@10.42.133.167:5050
+I0305 08:24:13.789885   198 sched.cpp:336] No credentials provided. Attempting to register without authentication
+I0305 08:24:13.796597   198 sched.cpp:703] Framework registered with 50396a44-db5d-4d3d-8857-5c93b6bf71f3-0035
+17/03/05 08:24:14 WARN SparkContext: Use an existing SparkContext, some configuration may not take effect.
+Pi is roughly 3.1423391423391425                                                
+17/03/05 08:24:36 WARN MesosCoarseGrainedSchedulerBackend: Timed out waiting for 3 remaining executors to terminate within 10000 ms. This may leave temporary files on the mesos nodes.
+I0305 08:24:36.502816   151 sched.cpp:1903] Asked to stop the driver
+I0305 08:24:36.502991   193 sched.cpp:1143] Stopping framework '50396a44-db5d-4d3d-8857-5c93b6bf71f3-0035'
+```
