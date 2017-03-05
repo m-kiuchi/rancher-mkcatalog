@@ -4,6 +4,12 @@
   description: "Apache Kafka"
   minimum_rancher_version: v1.0.0
   questions:
+    - variable: "NODE_COUNT"
+      label: "NODE_COUNT"
+      description: "Number of Cassandra nodes(incl. master)"
+      type: "int"
+      default: "3"
+      required: true
     - variable: "SSHUSER"
       label: "SSH user name"
       description: "supply ssh user name (default is kafka)"
@@ -11,5 +17,5 @@
       default: "kafka"
       required: false
 kafka:
-  scale: 1
+  scale: ${NODE_COUNT}
   start_on_create: true

@@ -6,4 +6,5 @@ kafka:
     MESOS_SERVICE: mesos/mesos-master
     SSHUSER: ${SSHUSER}
   ports:
+  - 9092:9092/tcp
   - 22
