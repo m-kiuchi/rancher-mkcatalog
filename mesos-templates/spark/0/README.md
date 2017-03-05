@@ -98,3 +98,12 @@ Type :help for more information.
 
 scala>
 ```
+#### Spark submit でジョブをサブミットする
+
+sshログイン後に、コマンドプロンプトから以下のようにタイプします。
+
+(例)
+
+```shell
+$ spark-submit --class org.apache.spark.example.SparkPi /opt/spark/examples/jars/spark-examples_2.11-2.0.2.jar 10
+```
