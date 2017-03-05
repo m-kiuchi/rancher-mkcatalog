@@ -6,7 +6,7 @@
   questions:
     - variable: "NODE_COUNT"
       label: "NODE_COUNT"
-      description: "Number of Cassandra nodes(incl. master)"
+      description: "Number of Kafka brokers"
       type: "int"
       default: "3"
       required: true
