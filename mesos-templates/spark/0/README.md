@@ -105,5 +105,5 @@ sshログイン後に、コマンドプロンプトから以下のようにタ�
 (例)
 
 ```shell
-$ spark-submit --class org.apache.spark.example.SparkPi /opt/spark/examples/jars/spark-examples_2.11-2.0.2.jar 10
+$ sudo spark-submit --class org.apache.spark.example.SparkPi /opt/spark/examples/jars/spark-examples_2.11-2.0.2.jar 10
 ```
