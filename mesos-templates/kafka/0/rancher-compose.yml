@@ -1,0 +1,15 @@
+.catalog:
+  name: kafka
+  version: "v2.0.2-rancher1"
+  description: "Apache Kafka"
+  minimum_rancher_version: v1.0.0
+  questions:
+    - variable: "SSHUSER"
+      label: "SSH user name"
+      description: "supply ssh user name (default is kafka)"
+      type: "string"
+      default: "kafka"
+      required: false
+kafka:
+  scale: 1
+  start_on_create: true

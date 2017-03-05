@@ -1,0 +1,9 @@
+kafka:
+  privileged: true
+  image: mkiuchicl/kafka
+  environment:
+    ZK_SERVICE: mesos/zookeeper
+    MESOS_SERVICE: mesos/mesos-master
+    SSHUSER: ${SSHUSER}
+  ports:
+  - 22

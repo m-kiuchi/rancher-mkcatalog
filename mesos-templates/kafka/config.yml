@@ -1,0 +1,9 @@
+name: Apache Kafka
+description: |
+  Apache Kafka
+version: v2.0.2-rancher1
+category: Distributed Messaging
+maintainer: Mitsutoshi Kiuchi <m-kiuchi@creationline.com>
+license: Apache2
+projectURL: https://github.com/m-kiuchi/rancher-mkcatalog
+minimum_rancher_version: v1.0.0
