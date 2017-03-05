@@ -11,31 +11,35 @@ Mesos on Rancher 環境で使用できる Apache Spark テンプレートです�
 - Template Version: 使用したいバージョンのテンプレートを選択します
 - New Stack:Name: スタック名に使用されます
 - 設定項目
-  - SSH user name: sshログインするためのユーザ名(デフォルト: root)
+  - SSH user name: sshログインするためのユーザ名(デフォルト: spark)
 
 `Launch` ボタンを押します。
 
-上部メニューから [INFRASTRUCTURE]-[Containers] を選択します
+上部メニューから [<Environment名>]-[Infrastructure] を選択します
 
 ![01.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/spark/0/01.jpg)
 
-コンテナ一覧から <スタック名>-<イメージ名>-<番号> の適切なコンテナを検索します。ここでは `mk2-frontend-centos7-1` を選択します。
+作成したスタック名をクリックします。ここでは `Spark` を選択します。
 
 ![02.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/spark/0/02.jpg)
 
-コンテナの稼働状況が表示されます。右上のメニューから [View Logs] を選択すると、コンテナ起動時に設定されたユーザ名とパスワードが表示されます。
+`sparkdriver` を選択します
 
 ![03.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/spark/0/03.jpg)
 
+コンテナ名を選択します。ここでは `spark-sparkdriver-1` を選択します。
+
 ![04.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/spark/0/04.jpg)
 
-![05.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/spark/0/05.jpg)
+コンテナの稼働状況が表示されます。右上のメニューから [View Logs] を選択すると、コンテナ起動時に設定されたユーザ名とパスワードが表示されます。
 
-コンテナの稼働状況画面の左上のスタック名をクリックすると、ssh接続先のIPアドレスをポート番号を確認することができます
+![05.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/spark/0/05.jpg)
 
 ![06.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/spark/0/06.jpg)
 
 ![07.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/spark/0/07.jpg)
+
+コンテナの稼働状況画面の左上のスタック名をクリックすると、ssh接続先のIPアドレスをポート番号を確認することができます
 
 ### sshでログイン
 
