@@ -1,6 +1,6 @@
 name: Apache Spark
 description: |
-  Apache Spark
+  Distributed computing
 version: v2.0.2-rancher1
 category: Distributed Computing
 maintainer: Mitsutoshi Kiuchi <m-kiuchi@creationline.com>

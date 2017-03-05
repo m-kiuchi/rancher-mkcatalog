@@ -1,6 +1,6 @@
 name: Apache Kafka
 description: |
-  Apache Kafka
+  Distributed Messaging server
 version: v0.10.2-rancher1
 category: Distributed Messaging
 maintainer: Mitsutoshi Kiuchi <m-kiuchi@creationline.com>
