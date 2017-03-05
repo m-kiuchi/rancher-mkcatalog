@@ -62,3 +62,39 @@ $ sudo <コマンド>
 
 ### Sparkの起動
 
+#### Spark Shellの起動
+
+sshログイン後に、コマンドプロンプトから以下のようにタイプします。
+
+```shell
+$ spark-shell
+```
+
+以下のように Spark Shell が起動することがわかります。
+
+```shell
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel).
+17/03/05 06:41:55 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+I0305 06:41:56.855275   212 sched.cpp:222] Version: 0.28.1
+I0305 06:41:56.861089   204 sched.cpp:326] New master detected at master@10.42.133.167:5050
+I0305 06:41:56.861368   204 sched.cpp:336] No credentials provided. Attempting to register without authentication
+I0305 06:41:56.869216   204 sched.cpp:703] Framework registered with 50396a44-db5d-4d3d-8857-5c93b6bf71f3-0022
+17/03/05 06:41:57 WARN SparkContext: Use an existing SparkContext, some configuration may not take effect.
+Spark context Web UI available at http://10.42.255.42:4040
+Spark context available as 'sc' (master = mesos://10.42.133.167:5050, app id = 50396a44-db5d-4d3d-8857-5c93b6bf71f3-0022).
+Spark session available as 'spark'.
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /___/ .__/\_,_/_/ /_/\_\   version 2.0.2
+      /_/
+         
+Using Scala version 2.11.8 (OpenJDK 64-Bit Server VM, Java 1.8.0_121)
+Type in expressions to have them evaluated.
+Type :help for more information.
+
+scala>
+```
