@@ -1,6 +1,6 @@
 sparkdriver:
   privileged: true
-  image: mkiuchicl/sparkmesos
+  image: mkiuchicl/sparkdriver
   environment:
     ZK_SERVICE: mesos/zookeeper
     MESOS_SERVICE: mesos/mesos-master
