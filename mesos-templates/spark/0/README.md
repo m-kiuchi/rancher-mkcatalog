@@ -123,7 +123,7 @@ Pi is roughly 3.1423391423391425
 I0305 08:24:36.502816   151 sched.cpp:1903] Asked to stop the driver
 I0305 08:24:36.502991   193 sched.cpp:1143] Stopping framework '50396a44-db5d-4d3d-8857-5c93b6bf71f3-0035'
 ```
-### Sparkの起動
+### Lightbend Actibator UIの起動
 
 Lightbend Activatorを起動する
 
