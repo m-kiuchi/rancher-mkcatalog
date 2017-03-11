@@ -15,35 +15,35 @@
 
 上部メニューから [<Environment名>]-[Infrastructure] を選択します
 
-![01.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/kafka/0/01.jpg)
+![01.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/frontend-akka/0/01.jpg)
 
-作成したスタック名をクリックします。ここでは `kafka` を選択します。
+作成したスタック名をクリックします。ここでは `frontend-akka` を選択します。
 
-![02.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/kafka/0/02.jpg)
+![02.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/frontend-akka/0/02.jpg)
 
-サービス名を選択します。ここでは `kafka` を選択します。
+サービス名を選択します。ここでは `frontend-akka` を選択します。
 
-![03.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/kafka/0/03.jpg)
+![03.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/frontend-akka/0/03.jpg)
 
-各コンテナ(Broaker)の稼動状態が表示されます。いずれのBroakerにもsshログインすることができます。
+コンテナの稼動状態が表示されます。コンテナにはsshログインすることができます。
 
-sshログインのための情報を取得するには、各コンテナをクリックします。
+sshログインのための情報を取得するには、コンテナ名をクリックします。
 
-![04.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/kafka/0/04.jpg)
+![04.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/frontend-akka/0/04.jpg)
 
 コンテナの稼働状況が表示されます。コンテナの稼働状況画面の下側でsshログインのための各種情報を確認することができます。
 
   - ssh接続先ホスト名、ポート番号
 
-![05.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/kafka/0/05.jpg)
+![05.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/frontend-akka/0/05.jpg)
 
 また、コンテナ稼働状況の右上のメニューから [View Logs] を選択すると、コンテナ起動時に設定されたユーザ名とパスワードが表示されます。
 
-![06.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/kafka/0/06.jpg)
+![06.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/frontend-akka/0/06.jpg)
 
-![07.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/kafka/0/07.jpg)
+![07.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/frontend-akka/0/07.jpg)
 
-![08.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/kafka/0/08.jpg)
+![08.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/frontend-akka/0/08.jpg)
 
 ## sshでログイン
 
