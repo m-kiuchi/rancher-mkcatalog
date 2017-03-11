@@ -34,6 +34,7 @@ sshログインのための情報を取得するには、コンテナ名をク�
 コンテナの稼働状況が表示されます。コンテナの稼働状況画面の下側でsshログインのための各種情報を確認することができます。
 
   - ssh接続先ホスト名、ポート番号
+  - activator ui用ポート番号(activator ui起動後、ブラウザで開くことができます)
 
 ![05.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/frontend-akka/0/05.jpg)
 
@@ -58,3 +59,11 @@ root以外のユーザでログインした場合、管理者権限コマンド�
 ```
 $ sudo <コマンド>
 ```
+
+## Lightbend Activatorを起動する
+
+```shell
+$ activator ui -Dhttp.address=0.0.0.0
+```
+
+ブラウザからコンテナのポート番号8888(ホスト側ではリダイレクトされて他のポート番号になっています)を開きます
