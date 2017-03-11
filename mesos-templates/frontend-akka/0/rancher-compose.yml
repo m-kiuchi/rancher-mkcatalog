@@ -1,0 +1,15 @@
+.catalog:
+  name: Frontend-Akka
+  version: "v1.3.12-rancher1"
+  description: "Lightbend Framework, Akka, CentOS7 for interactive frontend"
+  minimum_rancher_version: v1.0.0
+  questions:
+    - variable: "SSHUSER"
+      label: "SSH user name"
+      description: "supply ssh user name (default is root)"
+      type: "string"
+      default: "root"
+      required: false
+frontend-akka:
+  scale: 1
+  start_on_create: true

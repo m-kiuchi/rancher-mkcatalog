@@ -1,0 +1,10 @@
+frontend-akka:
+  privileged: true
+  image: mkiuchicl/frontend-akka
+  environment:
+    ZK_SERVICE: mesos/zookeeper
+    MESOS_SERVICE: mesos/mesos-master
+    SSHUSER: ${SSHUSER}
+  ports:
+  - 22
+  - 8888

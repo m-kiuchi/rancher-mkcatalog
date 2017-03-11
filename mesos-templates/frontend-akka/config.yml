@@ -1,0 +1,9 @@
+name: Frontend with Lightbend(Akka)
+description: |
+  Lightbend Framework, Akka, CentOS7 for interactive frontend
+version: v1.3.12-rancher1
+category: Frontend
+maintainer: Mitsutoshi Kiuchi <m-kiuchi@creationline.com>
+license: Apache2
+projectURL: https://github.com/m-kiuchi/rancher-mkcatalog
+minimum_rancher_version: v1.0.0
