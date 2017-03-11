@@ -1,6 +1,6 @@
 # Apache Spark 2.0.2 for Mesos on Rancher
 
-Mesos on Rancher 環境で使用できる Apache Spark テンプレートです。
+Mesos on Rancher 環境で使用できる Apache Spark テンプレートです。Lightbend Activatorを含むAkkaフレームワークが同梱されています。
 
 ## 使用方法
 
@@ -43,6 +43,7 @@ Mesos on Rancher 環境で使用できる Apache Spark テンプレートです�
 
   - ssh接続先ホスト名、ポート番号
   - ジョブ実行中に使用できるSpark UIのポート番号
+  - Lightbend activator ui起動中に使用できるポート番号
 
 ![08.jpg](https://github.com/m-kiuchi/rancher-mkcatalog/raw/master/mesos-templates/spark/0/08.jpg)
 
@@ -122,3 +123,12 @@ Pi is roughly 3.1423391423391425
 I0305 08:24:36.502816   151 sched.cpp:1903] Asked to stop the driver
 I0305 08:24:36.502991   193 sched.cpp:1143] Stopping framework '50396a44-db5d-4d3d-8857-5c93b6bf71f3-0035'
 ```
+### Sparkの起動
+
+Lightbend Activatorを起動する
+
+```shell
+$ activator ui -Dhttp.address=0.0.0.0
+```
+
+ブラウザからコンテナのポート番号8888(ホスト側ではリダイレクトされて他のポート番号になっています)を開きます

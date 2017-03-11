@@ -7,4 +7,5 @@ sparkdriver:
     SSHUSER: ${SSHUSER}
   ports:
   - 4040:4040/tcp
-  - 22
+  - 22/tcp
+  - 8888/tcp
