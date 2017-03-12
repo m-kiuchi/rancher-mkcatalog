@@ -45,6 +45,3 @@ services:
         image: rancher/lb-service-haproxy
         ports:
             - 9042:9042/tcp
-        labels:
-        io.rancher.container.agent.role: environmentAdmin
-        io.rancher.container.create_agent: 'true'
