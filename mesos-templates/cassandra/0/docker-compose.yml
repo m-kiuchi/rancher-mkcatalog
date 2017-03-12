@@ -38,3 +38,13 @@ services:
             #- 7001/tcp
             #- 9042/tcp
             #- 9160/tcp
+    #
+    # Datacenter 1 loadbalancer
+    #
+    cassandra-lb:
+        image: rancher/lb-service-haproxy
+        ports:
+            - 9042:9042/tcp
+        labels:
+        io.rancher.container.agent.role: environmentAdmin
+        io.rancher.container.create_agent: 'true'
