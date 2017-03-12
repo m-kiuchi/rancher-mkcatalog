@@ -6,7 +6,7 @@
   questions:
     - variable: "NODE_COUNT"
       label: "NODE_COUNT"
-      description: "Number of Cassandra nodes(incl. master)"
+      description: "Number of Cassandra nodes(excl. master)"
       type: "int"
       default: "2"
       required: true
