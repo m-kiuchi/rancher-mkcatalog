@@ -2,6 +2,14 @@
 
 Mesos on Rancher 環境で使用できる Apache Spark テンプレートです。Lightbend Activatorを含むAkkaフレームワークが同梱されています。
 
+## 注意事項
+
+Mesos slave上でスムーズにジョブが実行されるように、事前にMesos slave上で `docker pull` コマンドを使用して、Spark Executor イメージを事前展開することをおすすめします。
+
+```shell
+$ sudo docker pull mkiuchicl/sparkexecutor
+```
+
 ## 使用方法
 
 ### テンプレートの起動とログインパスワードの確認
@@ -134,3 +142,4 @@ $ activator ui -Dhttp.address=0.0.0.0
 ```
 
 ブラウザからコンテナのポート番号8888(ホスト側ではリダイレクトされて他のポート番号になっています)を開きます
+
