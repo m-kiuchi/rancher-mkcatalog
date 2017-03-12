@@ -22,14 +22,14 @@ seed:
 node:
   scale: ${NODE_COUNT}
   start_on_create: true
-cassandra-lb:
-  scale: 1
-  start_on_create: true
-  lb_config:
-    certs: []
-    port_rules:
-    - priority: 1
-      protocol: tcp
-      service: node
-      source_port: 9042
-      target_port: 9042
+#cassandra-lb:
+#  scale: 1
+#  start_on_create: true
+#  lb_config:
+#    certs: []
+#    port_rules:
+#    - priority: 1
+#      protocol: tcp
+#      service: node
+#      source_port: 9042
+#      target_port: 9042
