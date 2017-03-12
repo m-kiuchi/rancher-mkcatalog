@@ -65,10 +65,11 @@ $ sudo <コマンド>
 
 #### Spark Shellの起動
 
-sshログイン後に、コマンドプロンプトから以下のようにタイプします。
+sshログイン後に、コマンドプロンプトから以下のようにタイプします。必ず root アカウントで実行する必要があります。
 
 ```shell
-$ spark-shell
+$ sudo su -
+# spark-shell
 ```
 
 以下のように Spark Shell が起動することがわかります。
@@ -101,12 +102,13 @@ scala>
 ```
 #### Spark submit でジョブをサブミットする
 
-sshログイン後に、コマンドプロンプトから以下のようにタイプします。
+sshログイン後に、コマンドプロンプトから以下のようにタイプします。必ず root アカウントで実行する必要があります。
 
 (例)
 
 ```shell
-$ spark-submit --class org.apache.spark.examples.SparkPi /opt/spark/examples/jars/spark-examples_2.11-2.0.2.jar 10
+$ sudo su -
+# spark-submit --class org.apache.spark.examples.SparkPi /opt/spark/examples/jars/spark-examples_2.11-2.0.2.jar 10
 ```
 
 以下のように実行されます
