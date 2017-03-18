@@ -1,6 +1,6 @@
 .catalog:
   name: mariadb
-  version: "v10.1.222-rancher1"
+  version: "v10.1.22-rancher1"
   description: "MariaDB"
   minimum_rancher_version: v1.0.0
 mariadb:
