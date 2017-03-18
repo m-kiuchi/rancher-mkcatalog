@@ -1,6 +1,6 @@
 .catalog:
   name: Frontend-CentOS7
-  version: "v7.3.0-rancher1"
+  version: "v7.3.1-rancher1"
   description: "CentOS7 for interactive frontend"
   minimum_rancher_version: v1.0.0
   questions:
