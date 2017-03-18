@@ -1,0 +1,9 @@
+name: MariaDB
+description: |
+  Relational Database
+version: v10.1.22-rancher1
+category: Relational Database
+maintainer: Mitsutoshi Kiuchi <m-kiuchi@creationline.com>
+license: Apache2
+projectURL: https://github.com/m-kiuchi/rancher-mkcatalog
+minimum_rancher_version: v1.0.0

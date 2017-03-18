@@ -1,0 +1,8 @@
+mariadb:
+  privileged: true
+  image: mariadb:10.1.22
+  environment:
+    ZK_SERVICE: mesos/zookeeper
+    MESOS_SERVICE: mesos/mesos-master
+  ports:
+  - 3306/tcp
