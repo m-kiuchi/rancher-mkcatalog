@@ -3,5 +3,12 @@
   version: "v10.1.22-rancher1"
   description: "MariaDB"
   minimum_rancher_version: v1.0.0
+  questions:
+    - variable: "MARIA_ROOT_PASS"
+      label: "root password of mariadb"
+      description: ""
+      type: "string"
+      default: "maria"
+      required: true
 mariadb:
   start_on_create: true

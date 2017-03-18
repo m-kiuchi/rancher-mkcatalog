@@ -4,5 +4,6 @@ mariadb:
   environment:
     ZK_SERVICE: mesos/zookeeper
     MESOS_SERVICE: mesos/mesos-master
+    MYSQL_ROOT_PASSWORD: ${MARIA_ROOT_PASS}
   ports:
-  - 3306/tcp
+    - 3306/tcp
