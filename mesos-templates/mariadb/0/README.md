@@ -1,6 +1,6 @@
 # MariaDB 10.1.22
 
-Rancher 環境で使用できる MariaDB テンプレートです。 Docker HubのMariaDBコンテナイメージを使用しています。本テンプレートを使用するためにはRancher Host(ノード)がインターネットと接続できる環境である必要があります。
+Rancher 環境で使用できる MariaDB テンプレートです。
 
 ## 使用方法
 
